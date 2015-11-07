@@ -4,8 +4,6 @@
 	{ display: none;
 	visibility: hidden;}}
 
-@media screen and (min-device-width : 764px) and (max-device-width : 999px) {.mobile { display: none; visibility: hidden;}}
-
-@media screen and (min-device-width : 1000px) {.mobile, { display: none; visibility: hidden;}}
+@media screen and (min-device-width : 764px) {.mobile { display: none; visibility: hidden;}}
 
 </style>
