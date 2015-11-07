@@ -1,11 +1,11 @@
 <style>
-@media only screen and (min-width : 320px) and (max-width : 763px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 763px) {
 	.desktop 
 	{ display: none;
 	visibility: hidden;}}
 
-@media only screen and (min-width : 764px) and (max-width : 999px) {.mobile { display: none; visibility: hidden;}}
+@media screen and (min-device-width : 764px) and (max-device-width : 999px) {.mobile { display: none; visibility: hidden;}}
 
-@media only screen and (min-width : 1000px) {.mobile, { display: none; visibility: hidden;}}
+@media screen and (min-device-width : 1000px) {.mobile, { display: none; visibility: hidden;}}
 
 </style>
