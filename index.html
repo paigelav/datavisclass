@@ -11,7 +11,7 @@
 @media only screen and (min-width : 764px) {#mobile { display: none; }}
 
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 
@@ -55,9 +55,10 @@ I'd prefer this second type of visualization if the locations in the data set we
 </div>
 <h2>Class 3</h2>
 <br>
-<div id="jquery">
-	<script>
-	function writeNewsStory(company, symbol, day, quarter, income, city, netIncomePerShare, earningsPerShare, estimatedEarningsPerShare, revenue, estimatedRevenue, month, netQuarterExpectationBottom, netQuarterExpectationTop, fullYearEarningsExpectationsBottom, fullYearEarningsExpectationsTop, changePercentSinceYear, SPIndexChange, changePercentSinceMonths)
+<div id="article">
+<script>
+	function writeNewStory(company, symbol, day, quarter, income, city, netIncomePerShare, earningsPerShare, estimatedEarningsPerShare, revenue, estimatedRevenue, month, netQuarterExpectationBottom, netQuarterExpectationTop, fullYearEarningsExpectationsBottom, fullYearEarningsExpectationsTop, changePercentSinceYear, SPIndexChange, changePercentSinceMonths)
+
 	{
 	{if (quarter==3){
 		quarter = "third";}
@@ -88,7 +89,7 @@ I'd prefer this second type of visualization if the locations in the data set we
 
 	// console.log(company+" ("+symbol+") on "+day+" reported fiscal "+quarter+"-quarter net income of $"+income+" million.");
 	}
-	writeNewsStory("Macy's", "M", "Wednesday", 3, 118000000, "Cincinatti", .36, .56, .54, 5870000000, 6150000000, "January", 2.54, 2.64, 4.2, 4.3, 28, 1, 21)
+	writeNewStory("Macy's", "M", "Wednesday", 3, 118000000, "Cincinatti", .36, .56, .54, 5870000000, 6150000000, "January", 2.54, 2.64, 4.2, 4.3, 28, 1, 21)
 </script>
 </div>
 <h2>Class 4</h2>
