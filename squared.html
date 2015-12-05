@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+
+  <script src="bower_components/squared/dist/squared.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  
+  <style type="text/css">
+.squared-geog {
+    background-color: #FDC26D;
+}
+.squared-geog.small {
+    background-color: red;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.squared-geog.medium {
+    background-color: green;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.squared-geog.large {
+    background-color: blue;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+  </style>  
+  
+</head> 
+
+<body>
+  <div id="map" style="width: 600px; height: 400px"></div>
+</body>
+  
+<script>
+var mydata = [
+{"full_name":"Alabama","name":"AL","statepopulation":4779736},
+{"full_name":"Alaska","name":"AK","statepopulation":710231},
+{"full_name":"Arizona","name":"AZ","statepopulation":6392017},
+{"full_name":"Arkansas","name":"AR","statepopulation":2915918},
+{"full_name":"California","name":"CA","statepopulation":37253956},
+{"full_name":"Colorado","name":"CO","statepopulation":5029196},
+{"full_name":"Connecticut","name":"CT","statepopulation":3574097},
+{"full_name":"Delaware","name":"DE","statepopulation":897934},
+{"full_name":"Florida","name":"FL","statepopulation":18801310},
+{"full_name":"Georgia","name":"GA","statepopulation":9687653},
+{"full_name":"Hawaii","name":"HI","statepopulation":1360301},
+{"full_name":"Idaho","name":"ID","statepopulation":1567582},
+{"full_name":"Illinois","name":"IL","statepopulation":12830632},
+{"full_name":"Indiana","name":"IN","statepopulation":6483802},
+{"full_name":"Iowa","name":"IA","statepopulation":3046355},
+{"full_name":"Kansas","name":"KS","statepopulation":2853118},
+{"full_name":"Kentucky","name":"KY","statepopulation":4339367},
+{"full_name":"Louisiana","name":"LA","statepopulation":4533372},
+{"full_name":"Maine","name":"ME","statepopulation":1328361},
+{"full_name":"Maryland","name":"MD","statepopulation":5773552},
+{"full_name":"Massachusetts","name":"MA","statepopulation":6547629},
+{"full_name":"Michigan","name":"MI","statepopulation":9883640},
+{"full_name":"Minnesota","name":"MN","statepopulation":5303925},
+{"full_name":"Mississippi","name":"MS","statepopulation":2967297},
+{"full_name":"Missouri","name":"MO","statepopulation":5988927},
+{"full_name":"Montana","name":"MT","statepopulation":989415},
+{"full_name":"Nebraska","name":"NE","statepopulation":1826341},
+{"full_name":"Nevada","name":"NV","statepopulation":2700551},
+{"full_name":"New Hampshire","name":"NH","statepopulation":1316470},
+{"full_name":"New Jersey","name":"NJ","statepopulation":8791894},
+{"full_name":"New Mexico","name":"NM","statepopulation":2059179},
+{"full_name":"New York","name":"NY","statepopulation":19378102},
+{"full_name":"North Carolina","name":"NC","statepopulation":9535483},
+{"full_name":"North Dakota","name":"ND","statepopulation":672591},
+{"full_name":"Ohio","name":"OH","statepopulation":11536504},
+{"full_name":"Oklahoma","name":"OK","statepopulation":3751351},
+{"full_name":"Oregon","name":"OR","statepopulation":3831074},
+{"full_name":"Pennsylvania","name":"PA","statepopulation":12702379},
+{"full_name":"Rhode Island","name":"RI","statepopulation":1052567},
+{"full_name":"South Carolina","name":"SC","statepopulation":4625364},
+{"full_name":"South Dakota","name":"SD","statepopulation":814180},
+{"full_name":"Tennessee","name":"TN","statepopulation":6346105},
+{"full_name":"Texas","name":"TX","statepopulation":25145561},
+{"full_name":"Utah","name":"UT","statepopulation":2763885},
+{"full_name":"Vermont","name":"VT","statepopulation":625741},
+{"full_name":"Virginia","name":"VA","statepopulation":8001024},
+{"full_name":"Washington","name":"WA","statepopulation":6724540},
+{"full_name":"Washington, D.C.","name":"DC","statepopulation":601723},
+{"full_name":"West Virginia","name":"WV","statepopulation":1852994},
+{"full_name":"Wisconsin","name":"WI","statepopulation":5686986},
+{"full_name":"Wyoming","name":"WY","statepopulation":563626}
+];
+map = new Squared("map");
+  map.make();
+</script>
+</html>
