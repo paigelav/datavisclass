@@ -11,10 +11,35 @@
 
 @media only screen and (min-width : 764px) {#mobile { display: none; }}
 
+<style type="text/css">
+.squared-geog {
+    background-color: #FDC26D;
+}
+.squared-geog.small {
+    background-color: red;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.squared-geog.medium {
+    background-color: green;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.squared-geog.large {
+    background-color: blue;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+  </style>  
+
 </style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<meta charset="utf-8" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script src="bower_components/squared/dist/squared.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -146,6 +171,77 @@ for(var i = 0; i < coffee; i++){
 
 <h2>Class 5</h2>
 <br>
+<body>
+  <h1>Population With Graduate/Professional Degrees By State</h1>
+  <div id="map" style="width: 600px; height: 400px"></div>
+</body>
+  
+<script>
+var mydata = 
+[{"full_name":"Alabama","name":"AL","grad_degree":276545},
+{"full_name":"Alaska","name":"AK","grad_degree":45177},
+{"full_name":"Arizona","name":"AZ","grad_degree":427231},
+{"full_name":"Arkansas","name":"AR","grad_degree":139292},
+{"full_name":"California","name":"CA","grad_degree":2838385},
+{"full_name":"Colorado","name":"CO","grad_degree":474009},
+{"full_name":"Connecticut","name":"CT","grad_degree":401889},
+{"full_name":"Delaware","name":"DE","grad_degree":74117},
+{"full_name":"District of Columbia","name":"DC","grad_degree":133195},
+{"full_name":"Florida","name":"FL","grad_degree":1304635},
+{"full_name":"Georgia","name":"GA","grad_degree":666183},
+{"full_name":"Hawaii","name":"HI","grad_degree":98028},
+{"full_name":"Idaho","name":"ID","grad_degree":81463},
+{"full_name":"Illinois","name":"IL","grad_degree":1041514},
+{"full_name":"Indiana","name":"IN","grad_degree":365104},
+{"full_name":"Iowa","name":"IA","grad_degree":170493},
+{"full_name":"Kansas","name":"KS","grad_degree":201854},
+{"full_name":"Kentucky","name":"KY","grad_degree":262083},
+{"full_name":"Louisiana","name":"LA","grad_degree":224281},
+{"full_name":"Maine","name":"ME","grad_degree":95586},
+{"full_name":"Maryland","name":"MD","grad_degree":676079},
+{"full_name":"Massachusetts","name":"MA","grad_degree":792803},
+{"full_name":"Michigan","name":"MI","grad_degree":679682},
+{"full_name":"Minnesota","name":"MN","grad_degree":392259},
+{"full_name":"Mississippi","name":"MS","grad_degree":144880},
+{"full_name":"Missouri","name":"MO","grad_degree":401479},
+{"full_name":"Montana","name":"MT","grad_degree":63069},
+{"full_name":"Nebraska","name":"NE","grad_degree":113296},
+{"full_name":"Nevada","name":"NV","grad_degree":141721},
+{"full_name":"New Hampshire","name":"NH","grad_degree":117855},
+{"full_name":"New Jersey","name":"NJ","grad_degree":838125},
+{"full_name":"New Mexico","name":"NM","grad_degree":153085},
+{"full_name":"New York","name":"NY","grad_degree":1944452},
+{"full_name":"North Carolina","name":"NC","grad_degree":620248},
+{"full_name":"North Dakota","name":"ND","grad_degree":35245},
+{"full_name":"Ohio","name":"OH","grad_degree":741400},
+{"full_name":"Oklahoma","name":"OK","grad_degree":196219},
+{"full_name":"Oregon","name":"OR","grad_degree":299277},
+{"full_name":"Pennsylvania","name":"PA","grad_degree":960596},
+{"full_name":"Rhode Island","name":"RI","grad_degree":90148},
+{"full_name":"South Carolina","name":"SC","grad_degree":290052},
+{"full_name":"South Dakota","name":"SD","grad_degree":43612},
+{"full_name":"Tennessee","name":"TN","grad_degree":381055},
+{"full_name":"Texas","name":"TX","grad_degree":1501274},
+{"full_name":"Utah","name":"UT","grad_degree":167048},
+{"full_name":"Vermont","name":"VT","grad_degree":60781},
+{"full_name":"Virginia","name":"VA","grad_degree":826694},
+{"full_name":"Washington","name":"WA","grad_degree":544381},
+{"full_name":"West Virginia","name":"WV","grad_degree":93060},
+{"full_name":"Wisconsin","name":"WI","grad_degree":358816},
+{"full_name":"Wyoming","name":"WY","grad_degree":31724}];
+
+map = new Squared("map");
+  map.make();
+
+      map.data(mydata, "name");
+    console.log(mydata);
+   map.makeColorScale('grad_degree', {
+    minColor: "#4000FF",
+  maxColor: "#b71821",
+  steps: 5
+  });
+
+</script>
 <h2>Class 6</h2>
 </body>
 </html>
